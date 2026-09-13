@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f8e8ee;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff8fab;
+    color: white;
+    font-size: 16px;
+}
