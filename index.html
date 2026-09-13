@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Happy Birthday!</title>
+    <title>A Little Surprise 🎁</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+    </div>
+
+    <div class="opening" id="opening">
+
+        <p class="small-text">I made something for you...</p>
+
+        <h1>🎁 A Little Surprise</h1>
+
+        <p class="tap-text">Tap the gift</p>
+
+        <button class="gift-button" onclick="openGift()">
+            <div class="gift">
+                <div class="gift-lid"></div>
+                <div class="gift-box"></div>
+                <div class="ribbon-vertical"></div>
+                <div class="ribbon-horizontal"></div>
+            </div>
+        </button>
+
+    </div>
+
+
+    <div class="birthday hidden" id="birthday">
+
+        <div class="confetti">✨</div>
+
         <h1>🎂 Happy Birthday!</h1>
 
-        <p>I made something special for you.</p>
+        <p>
+            I hope you have an amazing day.
+        </p>
 
-        <button onclick="openGift()">Open Your Gift 🎁</button>
+        <p>
+            You deserve all the happiness in the world. ❤️
+        </p>
+
+        <button onclick="showMessage()">
+            There's more 💌
+        </button>
+
     </div>
+
+
+    <div class="message hidden" id="message">
+
+        <h1>💌 One More Thing</h1>
+
+        <p>
+            I made this little website just for you.
+        </p>
+
+        <p>
+            I hope this small surprise makes you smile. ❤️
+        </p>
+
+    </div>
+
 
     <script src="script.js"></script>
 
