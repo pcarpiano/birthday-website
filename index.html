@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>A Little Surprise 🎁</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Surprise ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="hearts">
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
-        <span>♡</span>
+    <!-- Hearts flying around -->
+    <div id="hearts"></div>
+
+    <!-- First screen -->
+    <div class="screen" id="startScreen">
+
+        <h1>A little something for you... 💜</h1>
+
+        <p>Tap anywhere to begin</p>
+
     </div>
 
-    <div class="opening" id="opening">
 
-        <p class="small-text">I made something for you...</p>
+    <!-- Main screen -->
+    <div class="screen hidden" id="mainScreen">
 
-        <h1>🎁 A Little Surprise</h1>
+        <div class="message">
+            <h1>Happy Birthday! ❤️</h1>
 
-        <p class="tap-text">Tap the gift</p>
+            <p>
+                I made this little surprise just for you.
+            </p>
+        </div>
 
-        <button class="gift-button" onclick="openGift()">
-            <div class="gift">
-                <div class="gift-lid"></div>
-                <div class="gift-box"></div>
-                <div class="ribbon-vertical"></div>
-                <div class="ribbon-horizontal"></div>
-            </div>
+        <button class="heartButton" onclick="showMessage()">
+            ❤️
         </button>
 
-    </div>
-
-
-    <div class="birthday hidden" id="birthday">
-
-        <div class="confetti">✨</div>
-
-        <h1>🎂 Happy Birthday!</h1>
-
-        <p>
-            I hope you have an amazing day.
-        </p>
-
-        <p>
-            You deserve all the happiness in the world. ❤️
-        </p>
-
-        <button onclick="showMessage()">
-            There's more 💌
-        </button>
+        <p class="tapText">Tap here ❤️</p>
 
     </div>
 
 
-    <div class="message hidden" id="message">
+    <!-- Final message -->
+    <div class="screen hidden" id="finalScreen">
 
-        <h1>💌 One More Thing</h1>
+        <div class="finalMessage">
 
-        <p>
-            I made this little website just for you.
-        </p>
+            <h1>💌 For You</h1>
 
-        <p>
-            I hope this small surprise makes you smile. ❤️
-        </p>
+            <p>
+                Happy Birthday! I hope you have an amazing day
+                filled with happiness, smiles, and good memories.
+            </p>
+
+            <p>
+                I hope this little surprise made you smile. ❤️
+            </p>
+
+        </div>
 
     </div>
+
+
+    <!-- Your music -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
 
 
     <script src="script.js"></script>
