@@ -8,4 +8,4 @@ function showMessage() {
     document.getElementById("birthday").classList.add("hidden");
 
     document.getElementById("message").classList.remove("hidden");
-}
+} 
